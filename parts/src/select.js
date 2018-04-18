@@ -16,9 +16,8 @@ class SelectForm extends React.Component {
         return (<div>
             <form onSubmit={e => this.doSubmit(e)}>
               <select
-                value={this.state.value} onChange={e => this.doChange(e)}>{options}
+                value={this.state.value} onChage={e => this.doChange(e)}>{options}
               </select><br />
-              <input type='submit' />
             </form>
         </div>)
     }
@@ -31,6 +30,6 @@ class SelectForm extends React.Component {
     }
 }
 ReactDOM.render(
-    <SelectForm items={['チョコ','梅干し','ラムネ']} value={['チョコ','梅干し','ラムネ']} />,
+    <SelectForm items={['チョコ','梅干し','ラムネ']} value='ラムネ' />,
     document.getElementById('root')
 )
