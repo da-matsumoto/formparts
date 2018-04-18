@@ -5,7 +5,7 @@ class RadioForm extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-            items: props.items,
+            items: propitems,
             value: ''
         }
     }
@@ -14,7 +14,7 @@ class RadioForm extends React.Component {
             return (<div key={i}>
               <label>
                   <input type='radio'
-                  name='items' value={i}
+                  name='items' value='{i}'
                   checked={this.state.value === i}
                   onChange={e => this.doChange(e)} /> {i}
               </label>
