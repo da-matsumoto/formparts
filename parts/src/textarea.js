@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 class TextAreaForm extends React.Component {
     constructor (props) {
         super(props)
-        this.state = {value: 'Hello'}
+        this.state({value: 'Hello'})
     }
     render () {
         return (<div>
